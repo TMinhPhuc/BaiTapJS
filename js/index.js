@@ -93,8 +93,8 @@ document.getElementById("btnQuyDoi").onclick = function () {
 //Input: Giá trị chiều dài, chiều rộng.
 //Process: 
 //  + Kiểm tra giá trị chiều dài, chiều rộng nhập vào có phải số lớn hơn 0 hay không.
-//  + Tính giá trị chu vi bằng ( chiều dài + chiều rộng ) * 2
-//  + Tính giá trị diện tích bằng chiều dài * chiều rộng 
+//  + Tính giá trị chu vi bằng ( chiều dài + chiều rộng ) * 2.
+//  + Tính giá trị diện tích bằng chiều dài * chiều rộng.
 //Output: Chu vi, diện tích của hình chữ nhật.
 
 document.getElementById("btnTinhHCN").onclick = function () {
@@ -119,9 +119,9 @@ document.getElementById("btnTinhHCN").onclick = function () {
 //Bài tập 5:
 //Input: Số nguyên dương 2 chữ số.
 //Process: 
-//  + Kiểm tra giá trị đầu vào.
-//  + Tính chữ số hàng chục.
-//  + Tính chữ số hàng đơn vị.
+//  + Kiểm tra giá trị đầu vào xem có phải số nguyên dương 2 chữ số không.
+//  + Tính chữ số hàng chục bằng input / 10.
+//  + Tính chữ số hàng đơn vị bằng input % 10.
 //  + Tính tổng số hàng chục, hàng đơn vị.
 //Output: Tổng số hàng chục, hàng đơn vị.
 
