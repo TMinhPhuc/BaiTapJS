@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JavaScript Cơ Bản</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5 mb-5">
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <h2 class="text-center mb-4">Danh Sách Bài Tập</h2>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="text-danger mb-3">Bài 1: Tính tiền lương nhân viên</h4>
+                        <p><strong>Lương 1 ngày:</strong> 100.000 VNĐ</p>
+                        <div class="mb-3">
+                            <label for="soNgayLam" class="form-label">Số ngày làm:</label>
+                            <input type="number" id="soNgayLam" class="form-control">
+                        </div>
+                        <button type="button" id="btnTinhLuong" class="btn btn-primary mb-3">Tính Lương</button>
+                        <div class="alert alert-success d-none" id="kqBai1"></div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="text-danger mb-3">Bài 2: Tính giá trị trung bình</h4>
+                        <p>Nhập vào 5 số thực để tính giá trị trung bình:</p>
+                        <div class="row g-2 mb-3">
+                            <div class="col-md"><input type="number" id="so1" class="form-control" placeholder="Số 1"></div>
+                            <div class="col-md"><input type="number" id="so2" class="form-control" placeholder="Số 2"></div>
+                            <div class="col-md"><input type="number" id="so3" class="form-control" placeholder="Số 3"></div>
+                            <div class="col-md"><input type="number" id="so4" class="form-control" placeholder="Số 4"></div>
+                            <div class="col-md"><input type="number" id="so5" class="form-control" placeholder="Số 5"></div>
+                        </div>
+                        <button type="button" id="btnTinhTrungBinh" class="btn btn-primary mb-3">Tính Trung Bình</button>
+                        <div class="alert alert-success d-none" id="kqBai2"></div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="text-danger mb-3">Bài 3: Quy đổi tiền</h4>
+                        <p><strong>Giá USD:</strong> 23.500 VND</p>
+                        <div class="mb-3">
+                            <label for="soUSD" class="form-label">Số tiền (USD):</label>
+                            <input type="number" id="soUSD" class="form-control">
+                        </div>
+                        <button type="button" id="btnQuyDoi" class="btn btn-primary mb-3">Quy Đổi</button>
+                        <div class="alert alert-success d-none" id="kqBai3"></div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="text-danger mb-3">Bài 4: Tính diện tích, chu vi hình chữ nhật</h4>
+                        <div class="row g-2 mb-3">
+                            <div class="col-md">
+                                <label for="chieuDai" class="form-label">Chiều dài:</label>
+                                <input type="number" id="chieuDai" class="form-control">
+                            </div>
+                            <div class="col-md">
+                                <label for="chieuRong" class="form-label">Chiều rộng:</label>
+                                <input type="number" id="chieuRong" class="form-control">
+                            </div>
+                        </div>
+                        <button type="button" id="btnTinhHCN" class="btn btn-primary mb-3">Tính Toán</button>
+                        <div class="alert alert-success d-none" id="kqBai4">
+                            Diện tích: <span id="dienTich" class="fw-bold"></span> <br>
+                            Chu vi: <span id="chuVi" class="fw-bold"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="text-danger mb-3">Bài 5: Tính tổng 2 ký số</h4>
+                        <div class="mb-3">
+                            <label for="soHaiChuSo" class="form-label">Nhập số có 2 chữ số (VD: 12, 44...):</label>
+                            <input type="number" id="soHaiChuSo" class="form-control">
+                        </div>
+                        <button type="button" id="btnTinhTongKySo" class="btn btn-primary mb-3">Tính Tổng</button>
+                        <div class="alert alert-success d-none" id="kqBai5">
+                            Tổng 2 ký số là: <span id="tongKySo" class="fw-bold"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
